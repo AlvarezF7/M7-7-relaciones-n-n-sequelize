@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body centrado */
+body {
+  background: #e6e8fc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 100vh;
+ 
+}
+
+/* Container principal */
+#container {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #081299;
+  font-size: 2.2rem;
+}
+
+/* Layout principal con GRID */
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Header ocupa toda la fila */
+header {
+  grid-column: span 2;
+}
+
+/* Secciones */
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(69, 59, 199, 0.863);
+}
+
+/* Títulos */
+section h2 {
+  margin-bottom: 15px;
+  color: #081299;
+}
+
+/* Formularios con FLEX */
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.formulario input,
+.formulario select {
+  flex: 1;
+  min-width: 120px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Botones */
+.formulario button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #081299;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  background: #7f90ee;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* Items */
+li {
+  background: #e4e4ff;
+  color:#081299;
+  margin-bottom: 6px;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+/* Sublistas (actores dentro de películas) */
+li ul {
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+li ul li {
+  background: #e4e4ff;
+  color:#081299;
+  font-size: 0.9rem;
+}
+
+/* botones */
+div{
+ display:flex;
+ justify-content: space-between;
+ align-items:center;
+}
+
+.btn-eliminar {
+  background: #982ed4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Hover */
+.btn-eliminar:hover {
+  background: #ff4935;
+}
+
+/* Opcional: efecto click */
+.btn-eliminar:active {
+  transform: scale(0.95);
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #dde5ff;
+  background-color: #081299;
+}

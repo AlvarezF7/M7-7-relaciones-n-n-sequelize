@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Peliculas</title>
+</head>
+<body>
+    <div id="container">
+       <!-- Header -->
+    <header>
+      <h1>Gestión de Películas y Actores</h1>
+    </header>
+    <section id="peliculas">
+      <h2>Películas</h2>
+      <div class="formulario">
+        <input type="text" id="titulo" placeholder="Título de la película">
+        <input type="number" id="anio" placeholder="Año">
+        <button onclick="crearPelicula()">Crear Película</button>
+      </div>
+      <ul id="listaPeliculas"></ul>
+    </section>
+    <section id="actores">
+      <h2>Actores</h2>
+      <div class="formulario">
+        <input type="text" id="nombre" placeholder="Nombre del actor">
+        <input type="date" id="fecha_nacimiento" placeholder="fecha nacimiento">
+        <button onclick="crearActor()">Crear Actor</button>
+      </div>
+      <ul id="listaActores"></ul>
+    </section>
+    <section id="asignacion">
+        <h2>Asignar Actor a Película</h2>
+        <div class="formulario">
+            <select id="selectPelicula"></select>
+            <select id="selectActor"></select>
+            <button onclick="asignarActor()">Asignar</button>
+        </div>
+    </section>
+    </div>
+      <footer>Proyecto con fines Educativos para el curso de Full Stack de Sence 2025-2026</footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
